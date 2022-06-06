@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<script>
+msg = "+BasteIT+"; msg = "Information Technology and Communications" + msg;pos = 0;
+function scrollMSG() {
+document.title = msg.substring(pos, msg.length) + msg.substring(0, pos);
+pos++;
+if (pos > msg.length) pos = 0
+window.setTimeout("scrollMSG()",500);
+}
+scrollMSG();
+</script>
+  <LINK href="Pictures/information-technology-services-logo.png" type="image/x-icon" rel="shortcut icon">
+  <script src="js/jquery-1.11.1.min.js" ></script>
+   <script>
+var address = Array("Pictures/hd-wallpapers-wallpixy.jpg");
+i=0;
+
+
+function close()
+{
+  document.getElementById('show').className="e1";
+}
+
+function open()
+{
+document.getElementById('show').style.backgroundImage="url('"+address[i]+"')";
+
+  document.getElementById('show').className='baz';
+}
+
+
+function change()
+{
+setTimeout("open()",1200);
+}
+t=setTimeout("change()",1200);
+
+
+
+
+  function a()
+  {
+  window.location='index1.html';
+  }
+  function b()
+  {
+  window.location='index2.html';
+  }
+  function c()
+  {
+    window.location='index3.html';  }
+
+    $(document).ready(function(){
+  $("#bg").animate({opacity: 1,background: 'Pictures/internet.jpg',width:'99.92%',height:'100%',left:'0px',top:'0px'},2000)
+  });
+
+   $(document).ready(function(){
+  $("#pic").animate({width:'23.7%',height:'30.5%',opacity: 1,left:'39.5%',top:'0.6%'},2000)
+  });
+
+  $(document).ready(function(){
+  $("#text").animate({opacity: 1,fontSize:'100%'},4000)
+  });
+</script>
+
+<style>
+.bg{
+  background: url(Pictures/internet.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0;
+  border-radius: 10px;
+  width: 110%;
+  height: 110%;
+  top: -10px;
+  left: 0px;
+  }
+
+div{
+  top: 600px;
+  left: 640px;
+  position: absolute;
+  opacity: 1;
+  overflow: hidden;
+box-shadow: 0px 0px  30px #000000;
+border-color:#FFFFFF;
+border-style: solid;
+border-radius: 100px;
+}
+
+.e1{
+width: 200px;
+  height: 300px;
+  top: 30%;
+  left: 43%;
+  position: absolute;
+  overflow: hidden;
+border-color:#FFFFFF;
+border-style: hidden;
+border-radius: 100px;
+box-shadow: 0px 0px 50px #000033;
+text-shadow: #000000 0px 0px 3.5px;
+opacity: 0;
+padding: 0px;
+-webkit-transition:800ms;
+-moz-transition:800ms;
+-o-transition:800ms;
+}
+.baz:hover{
+ box-shadow: 0px 20px 100px 40px #000099;
+   -webkit-transition:1000ms;
+  -moz-transition:1000ms;
+  -o-transition:1000ms;
+  opacity: 1;
+}
+
+.baz{
+width: 23.7%;
+height: 60%;
+left: 39%;
+top:32%;
+position: absolute;
+box-shadow: 0px 0px  80px #000000;
+border-color:#FFFFFF;
+border-style: solid;
+-webkit-transition:2000ms;
+-moz-transition:2000ms;
+-o-transition:2000ms;
+
+}
+  button{
+width: 67%;
+height: 46px;
+background-image: url(button/General/button14.gif);
+background-size: cover;
+  border-radius: 50px;
+  position: absolute;
+  left: 17%;
+  box-shadow: 0px 0px 20px  #00FFFF;
+  text-shadow: 4px 4px 6px #3300FF;
+  -webkit-transition:1000ms;
+  -moz-transition:1000ms;
+  -o-transition:1000ms;
+}
+.button:hover{
+width: 200px;
+height: 46px;
+left: 17%;
+background-image: url(button/General/button18.gif);
+box-shadow:2px 2px 20px #33CCFF;
+background-size: cover;
+background-repeat: no-repeat;
+  border-radius: 50px;
+  position: absolute;
+ box-shadow: 0px 0px 20px  #33FF00;
+-webkit-transition:1000ms;
+  -moz-transition:1000ms;
+  -o-transition:1000ms;
+}
+.button:active{
+width: 200px;
+height: 46px;
+background-image: url(button/General/button16.gif);
+background-size: cover;
+  border-radius: 50px;
+  position: absolute;
+  left:45px;
+  box-shadow: 0px 0px 20px  #0033FF;
+}
+.tag{
+  color: #33FFFF;
+  text-shadow: 0px 0px 10px #66FFFF;
+  font-family: Times New Roman;
+  font-weight: bold;
+
+}
+
+</style>
+</head>
+
+<body  >
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+<div id="bg" class="bg" style="opacity: 0" >
+<center><img id="pic" src="Pictures/magnifying-background.jpg" style="width: 650px;height: 650px;border-radius: 300px;top: 20px;;left: 25%;box-shadow: 0px 0px 40px #33FFFF;opacity: 0;position: absolute" ></center>
+<div class="e1" style="background:url(Pictures/hd-wallpapers-wallpixy.jpg); background-size: cover;background-position: top;background-repeat: no-repeat;position: absolute" id="show" oninput="ok()">
+<button onclick="a()" class="button" style="font-family: Titr;font-size: 22px;top: 51%">Professors Courses</button>
+<button onclick="b()" class="button" style="font-family: Titr;font-size: 20px;top: 65%">Educational Softwares</button>
+<button onclick="c()" class="button" style="font-family: Titr;font-size: 26px;top: 79%">References</button>
+</div>
+<p id="text" class="tag" style="position: absolute;top: 91%;left: 43.8%;opacity: 0">Designed By Nima Moayedy<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ural Federal University</p>
+
+<audio src="Music/About1(Trimmed).mp3" hidden="hidden" loop="loop" autoplay="autoplay">
+</audio>
+</div>
+</body>
+
+</html>

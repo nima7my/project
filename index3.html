@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+<script>
+msg = "+BasteIT+"; msg = "Information Technology and Communications" + msg;pos = 0;
+function scrollMSG() {
+document.title = msg.substring(pos, msg.length) + msg.substring(0, pos);
+pos++;
+if (pos > msg.length) pos = 0
+window.setTimeout("scrollMSG()",500);
+}
+scrollMSG();
+</script>
+  <LINK href="Pictures/information-technology-services-logo.png" type="image/x-icon" rel="shortcut icon">
+  <script src="js/jquery-1.11.1.min.js" ></script>
+  <script>
+  $(document).ready(function(){
+  $("#bg").animate({opacity: 1,background: 'Pictures/internet.jpg',width:'99.92%',height:'132%',left:'0px',top:'0px'},4200)
+  });
+
+  $(document).ready(function(){
+  $("#table1").animate({opacity: 1},3000)
+  });
+  $(document).ready(function(){
+  $("#table2").animate({opacity: 1},3000)
+  });
+  </script>
+  <style>
+  #head{
+    color: #FF0000;
+    font-family: Titr;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    height: 40px;
+    text-shadow: -5px 5px 5px  #660000;
+  }
+  #list-left{
+    color: #00FF00;
+    font-family: Titr;
+    text-align: center;
+    font-size: 220%;
+   text-shadow: -5px 5px 5px #003300;
+   border: inset;
+  }
+  #list-right{
+   color: #FFFFCC;
+   text-align: center;
+    font-family: Titr;
+    font-size: 220%;
+   text-shadow: 5px 5px 6px #000066;
+   border: inset;
+  }
+  .bg{
+  background: url(Pictures/manabe.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0;
+  border-radius: 10px;
+  width: 100%;
+  height: 167%;
+  top: -10px;
+  left: -10px;
+  }
+
+
+  </style>
+
+
+</head>
+
+<body background="" style="background-size: cover" >
+<div id="bg" class="bg" style="opacity: 0" >
+
+<center><table id="table1" dir="rtl" border="7"  width="95%"  height="150px"   style="color: #FFFFFF;border-color: #FF0066;opacity: 0"  cellspacing="6px" cellpadding="6px"  >
+  <tr><td id="head" style="border-color: #3300FF;width: 43%;background: #3333FF;position: relative; opacity: 0.9" ><p style="position: relative; top: 10px">Professors Names</p></td>
+  <td id="head" style="border-color: #3300FF;width: 57%;background: #3333FF;position: relative; opacity: 0.9"><p style="position: relative; top: 10px">Universities Names</p></td></tr>
+  </table>
+  <table id="table2" dir="rtl" border="7"  width="95%"  height="80%"   style="color: #FFFFFF;border-color: #FF0066;opacity: 0;position: absolute;left: 2.5%"  cellspacing="7px" cellpadding="7px"  >
+  <tr><td id="list-right" ></td>
+   <td id="list-left" >Lomonosov University</td>
+   </tr>
+  <tr><td id="list-right" >Dr. Marina Medvedeva<br> Dr. Ebenezer Agbozo</td>
+  <td id="list-left" >Ural Federal University</td></tr>
+  <tr><td id="list-right" ></td>
+  <td id="list-left" >Saint Petersburg State University</td></tr>
+  <tr><td id="list-right" ></td>
+  <td id="list-left" >Novosibirsk State University</td></tr>
+  <tr><td id="list-right" ></td>
+  <td id="list-left" >ITMO University</td></tr>
+    </table></center>
+    </div>
+</body>
+
+</html>
